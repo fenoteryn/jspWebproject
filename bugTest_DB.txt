@@ -1,0 +1,65 @@
+CREATE DATABASE `bugTest` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+use bugTest;
+
+CREATE TABLE `admin` (
+  `admin_id` varchar(20) NOT NULL,
+  `admin_passwd` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`admin_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `members` (
+  `id` varchar(45) NOT NULL,
+  `passwd` varchar(45) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `e_mail` varchar(45) DEFAULT NULL,
+  `phone` varchar(45) DEFAULT NULL,
+  `address` varchar(45) DEFAULT NULL,
+  `job` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `Board` (
+  `no` int(5) NOT NULL AUTO_INCREMENT,
+  `title` varchar(20) DEFAULT NULL,
+  `detail` varchar(1000) DEFAULT NULL,
+  `date` varchar(20) DEFAULT NULL,
+  `name` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`no`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `play_list` (
+  `play_no` int(5) NOT NULL AUTO_INCREMENT,
+  `play_name` varchar(20) DEFAULT NULL,
+  `play_image` varchar(20) DEFAULT NULL,
+  `play_kate` varchar(20) DEFAULT NULL,
+  `play_jsp` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`play_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `comment` (
+  `no` int(5) NOT NULL AUTO_INCREMENT,
+  `title_no` varchar(20) DEFAULT NULL,
+  `detail` varchar(1000) DEFAULT NULL,
+  `date` varchar(20) DEFAULT NULL,
+  `name` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`no`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+
+INSERT INTO `bugTest`.`play_list` (`play_no`, `play_name`, `play_image`, `play_kate`, `play_jsp`) VALUES ('1', '나에게 연인', 'ep1.png', '연애', 'bug1');
+INSERT INTO `bugtest`.`play_list` (`play_no`, `play_name`, `play_image`, `play_kate`, `play_jsp`) VALUES ('2', '나의 첫 인상 ', 'ep2.png', '우정', 'bug2');
+INSERT INTO `bugtest`.`play_list` (`play_no`, `play_name`, `play_image`, `play_kate`, `play_jsp`) VALUES ('3', '당신의 현재 심리 상태', 'ep3.png', '우정', 'bug3');
+INSERT INTO `bugtest`.`play_list` (`play_no`, `play_name`, `play_image`, `play_kate`, `play_jsp`) VALUES ('4', '당신에게 가격표', 'ep4.png', '우정', 'bug4');
+INSERT INTO `bugtest`.`play_list` (`play_no`, `play_name`, `play_image`, `play_kate`, `play_jsp`) VALUES ('5', '나는 어떤 타입', 'ep5.png', '우정', 'bug5');
+INSERT INTO `bugtest`.`play_list` (`play_no`, `play_name`, `play_image`, `play_kate`, `play_jsp`) VALUES ('6', '나는 과연 어떤 삶 ', 'ep6.png', '우정', 'bug6');
+INSERT INTO `bugtest`.`play_list` (`play_no`, `play_name`, `play_image`, `play_kate`, `play_jsp`) VALUES ('7', '당신이 빠지기 쉬운 ', 'ep7.png', '연애', 'bug7');
+INSERT INTO `bugtest`.`play_list` (`play_no`, `play_name`, `play_image`, `play_kate`, `play_jsp`) VALUES ('8', '애인의 지금 상태', 'ep8.png', '연애', 'bug8');
+INSERT INTO `bugtest`.`play_list` (`play_no`, `play_name`, `play_image`, `play_kate`, `play_jsp`) VALUES ('9', '이성 친구의 과거', 'ep9.png', '연애', 'bug9');
+
+INSERT INTO `bugtest`.`members` (`id`, `passwd`, `name`, `e_mail`, `phone`, `address`, `job`) VALUES ('tjdbswo7', '0000', '서윤재', 'tjdbswo7@naver.com', '000', '서울', '학생');
+INSERT INTO `bugtest`.`members` (`id`, `passwd`, `name`, `e_mail`, `phone`, `address`, `job`) VALUES ('rlaaldud', '000', '김미영', 'rlaaldud@naver.com', '000', '서울', '학생');
+INSERT INTO `bugtest`.`members` (`id`, `passwd`, `name`, `e_mail`, `phone`, `address`, `job`) VALUES ('dbtjdwns', '000', '유성준', 'dbtjdwns@naver.com', '00', '서울', '학생');
