@@ -3,8 +3,12 @@
 
 ![스크린샷(58)](https://user-images.githubusercontent.com/56014948/88356848-32de9500-cda4-11ea-800c-1d3f79acf7d9.png)
 
+홈, 연애, 우정, 운세, 게시판 탭과 심리테스트들이 있는 메인 화면
+
 ![스크린샷(57)](https://user-images.githubusercontent.com/56014948/88356847-3114d180-cda4-11ea-9f22-62c0f4a42b3a.png)
+메인을 전체 화면으로 봤을 경우
 
 ![스크린샷(59)](https://user-images.githubusercontent.com/56014948/88356849-32de9500-cda4-11ea-9150-63c15203c08b.png)
+
 
 ![스크린샷(60)](https://user-images.githubusercontent.com/56014948/88356850-33772b80-cda4-11ea-8e47-c8d6fb9a374d.png)
